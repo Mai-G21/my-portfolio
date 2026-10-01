@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FAFAF9;
+  --color-ink: #1C1917;
+  --color-white: #FFFFFF;
+  --color-blush: #FCE7F3;
+  --color-purple: #BE185D;
+  --color-purplelight: #E0E7FF;
+  --color-pink: #F9A8D4;
+  --color-graphite: #6B6460;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+
+.intro-hi{ opacity:1; }
+.wave-letter{
+  display:inline-block;
+  opacity:0;
+  transform: translateY(20px);
+  animation: waveIn 0.6s cubic-bezier(.22,1,.36,1) forwards;
+}
+@keyframes waveIn{
+  to{ opacity:1; transform: translateY(0); }
+}
+
+.hero-word{ display:inline-block; opacity:0; transform:translateY(24px); animation: riseIn .7s cubic-bezier(.22,1,.36,1) forwards; }
+@keyframes riseIn{ to{ opacity:1; transform:translateY(0); } }
+
+.cursor{ display:inline-block; width:8px; background:#FCE7F3; margin-left:2px; animation: blink 1s step-end infinite; }
+@keyframes blink{ 50%{ opacity:0; } }
+
+.reveal{ opacity:0; transform:translateY(30px); transition:opacity .8s ease, transform .8s ease; }
+.reveal.in{ opacity:1; transform:translateY(0); }
+
+.nav-link{ position:relative; padding-bottom:4px; }
+.nav-link::after{ content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background:#1C1917; transition:width .25s ease; }
+.nav-link:hover::after{ width:100%; }
+
+.exp-card .exp-detail{ display:none; }
+.exp-card.open .exp-detail{ display:block; }
+.exp-card.open .exp-chevron{ transform: rotate(180deg); }
+.exp-chevron{ transition: transform .25s ease; }
+
+.marquee-track{ animation: scrollLeft 30s linear infinite; }
+@keyframes scrollLeft{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+
+.intro-blob-1{
+  position:absolute; top:-80px; left:-60px; width:380px; height:380px; border-radius:50%;
+  background: radial-gradient(circle, #FCE7F3 0%, rgba(252,231,243,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.9;
+}
+.intro-blob-2{
+  position:absolute; bottom:-100px; left:120px; width:320px; height:320px; border-radius:50%;
+  background: radial-gradient(circle, #E0E7FF 0%, rgba(224,231,255,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.9;
+}
+.intro-blob-3{
+  position:absolute; top:20%; left:45%; width:280px; height:280px; border-radius:50%;
+  background: radial-gradient(circle, #FCE7F3 0%, rgba(252,231,243,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.75;
+}
+.intro-blob-4{
+  position:absolute; bottom:5%; right:10%; width:300px; height:300px; border-radius:50%;
+  background: radial-gradient(circle, #E0E7FF 0%, rgba(224,231,255,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.8;
+}
+.intro-blob-5{
+  position:absolute; top:5%; right:25%; width:220px; height:220px; border-radius:50%;
+  background: radial-gradient(circle, #FCE7F3 0%, rgba(252,231,243,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.7;
+}
+
+/* Intro blobs */
+.intro-blob-1{
+  position:absolute; top:-80px; left:-60px; width:380px; height:380px; border-radius:50%;
+  background: radial-gradient(circle, #FCE7F3 0%, rgba(252,231,243,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.9;
+}
+.intro-blob-2{
+  position:absolute; bottom:-100px; right:15%; width:320px; height:320px; border-radius:50%;
+  background: radial-gradient(circle, #E0E7FF 0%, rgba(224,231,255,0) 70%);
+  filter: blur(6px); pointer-events:none; opacity:0.85;
+}
+
+/* Photo card pop-up entrance */
+#photo-card{
+  opacity:0;
+  transform: translateY(120px);
+  animation: popUp 0.8s cubic-bezier(.22,1,.36,1) forwards;
+  animation-delay: 0.4s;
+  transition: transform 0.08s ease-out;
+  will-change: transform;
+}
+@keyframes popUp{
+  to{ opacity:1; transform: translateY(0); }
+}
+#photo-shine{
+  mix-blend-mode: overlay;
+  transition: opacity 0.2s;
+}

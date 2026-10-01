@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maitreyi Gharat — Data Engineer / Solutions Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="./dist/output.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</head>
+
+<body class="font-sans bg-cream text-ink">
+
+<section id="intro" class="relative overflow-hidden min-h-screen flex items-center px-6 md:px-20 bg-cream text-ink">
+  <div class="intro-blob-1"></div>
+  <div class="intro-blob-2"></div>
+
+  <div class="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_260px] gap-12 items-center relative">
+
+    <div class="text-center md:text-left">
+     <div class="intro-hi font-serif text-2xl sm:text-3xl text-graphite mb-1">
+        Hi, I'm
+    </div>
+    <h1 id="wave-name" class="font-serif font-medium text-5xl sm:text-6xl md:text-7xl mb-6 text-ink"></h1>
+      <p class="font-serif text-lg md:text-xl leading-relaxed text-ink/80">
+        I'm a Data Engineer, a Solutions Engineer and a self-proclaimed Snowflake fan.
+      </p>
+    </div>
+
+    <div id="photo-card" class="relative w-full max-w-[260px] h-[320px] mx-auto md:mx-0 rounded-2xl overflow-hidden border border-black/10 shadow-xl cursor-pointer">
+  <img src="images/_MG_9038.JPG" alt="Maitreyi Gharat" class="w-full h-full object-cover pointer-events-none">
+  <div id="photo-shine" class="absolute inset-0 pointer-events-none" style="opacity:0;"></div>
+</div>
+
+  </div>
+</section>
+
+<div class="hidden md:block fixed left-7 top-24 bottom-16 w-[2px] bg-black/10 z-50">
+  <div id="progress-fill" class="absolute top-0 left-0 w-full h-0 bg-purple transition-[height] duration-100 ease-linear"></div>
+</div>
+
+<nav class="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-6 md:px-12 py-5 backdrop-blur-md bg-cream/85 border-b border-black/10">
+  <div class="font-serif font-bold text-xl tracking-tight">M.G</div>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="#intro" class="nav-link text-ink text-[11px] font-semibold uppercase tracking-wider">Home</a></li>
+    <li><a href="#about" class="nav-link text-ink text-[11px] font-semibold uppercase tracking-wider">About</a></li>
+    <li><a href="#experience" class="nav-link text-ink text-[11px] font-semibold uppercase tracking-wider">Experience</a></li>
+    <li><a href="#projects" class="nav-link text-ink text-[11px] font-semibold uppercase tracking-wider">Projects</a></li>
+    <li><a href="#certifications" class="nav-link text-ink text-[11px] font-semibold uppercase tracking-wider">More</a></li>
+  </ul>
+  <a href="mailto:maitreyigharat@gmail.com" class="text-[11px] font-bold uppercase tracking-wider text-white bg-purple px-5 py-2.5 hover:bg-ink transition-colors">Get in touch</a>
+</nav>
+
+<section id="hero" class="relative px-6 md:px-20 pt-32 pb-20 bg-cream">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-10 items-center mb-14">
+
+      <div>
+        <div class="inline-flex items-center gap-2 text-sm text-ink border border-black/15 rounded-full px-4 py-1.5 mb-7">
+          <span class="w-1.5 h-1.5 rounded-full bg-purple"></span>
+          Open to Data Engineer, Product Manager &amp; Solutions Engineer roles
+        </div>
+
+        <h1 class="font-serif font-medium leading-[1.2] tracking-tight text-3xl sm:text-4xl mb-5 text-ink max-w-xl">I turn complex data and AI problems into solutions people actually use.</h1>
+
+    <div class="flex flex-wrap gap-2 mb-7">
+        <span class="text-[11px] font-semibold uppercase tracking-wide text-purple bg-blush rounded-full px-3 py-1.5">Data Engineering</span>
+        <span class="text-[11px] font-semibold uppercase tracking-wide text-ink bg-purplelight rounded-full px-3 py-1.5">Solutions Engineering</span>
+    </div>
+
+        <p class="text-graphite text-lg max-w-lg mb-11 leading-relaxed">
+            Designing and delivering data and AI solutions, from first demo to production support.
+            </p>
+
+        <div class="bg-ink border border-black/10 rounded-xl px-6 py-5 max-w-xl font-sans text-[15px]">
+          <div class="flex gap-1.5 mb-3.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple inline-block"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-purplelight inline-block"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-blush inline-block"></span>
+          </div>
+          <div><span id="typed-line" class="text-blush whitespace-pre-wrap break-words"></span><span class="cursor">&nbsp;</span></div>
+        </div>
+
+        <div class="flex gap-5 mt-10">
+          <a href="https://www.linkedin.com/in/maitreyi-gharat/" target="_blank" aria-label="LinkedIn"
+             class="w-[38px] h-[38px] rounded-full border border-black/15 flex items-center justify-center text-ink hover:border-purple hover:bg-blush transition-colors">
+            <i class="ti ti-brand-linkedin text-[18px]"></i>
+          </a>
+          <a href="https://github.com/Mai-G21" target="_blank" aria-label="GitHub"
+             class="w-[38px] h-[38px] rounded-full border border-black/15 flex items-center justify-center text-ink hover:border-purple hover:bg-blush transition-colors">
+            <i class="ti ti-brand-github text-[18px]"></i>
+          </a>
+          <a href="mailto:maitreyigharat@gmail.com" aria-label="Email"
+             class="w-[38px] h-[38px] rounded-full border border-black/15 flex items-center justify-center text-ink hover:border-purple hover:bg-blush transition-colors">
+            <i class="ti ti-mail text-[18px]"></i>
+          </a>
+        </div>
+      </div>
+
+     <div class="flex flex-col gap-4">
+  <div class="bg-blush border border-purple/15 rounded-lg p-8 relative">
+    <span class="absolute top-4 right-4 font-mono text-[10px] text-purple tracking-widest">[HOW_I_WORK]</span>
+    <h3 class="font-serif text-xl mb-2 text-ink">How I Work</h3>
+    <p class="text-[13px] text-ink/70 leading-relaxed mb-6">A live look at how a project actually moves.</p>
+
+    <div class="relative px-10 mb-2">
+      <div class="absolute top-[6px] left-10 right-10 h-[2px] bg-purple opacity-35"></div>
+      <div class="flex justify-between relative">
+        <div class="w-3 h-3 rounded-full bg-purple"></div>
+        <div class="w-3 h-3 rounded-full bg-purple opacity-50"></div>
+        <div class="w-3 h-3 rounded-full bg-purple opacity-25"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-3 mt-6">
+      <div class="bg-cream rounded p-3.5 border-t-2 border-purple">
+        <p class="text-[9px] font-bold uppercase tracking-wide text-purple mb-2">Now</p>
+        <p class="text-[12px] text-ink font-semibold mb-1.5 leading-tight">Understand</p>
+        <p class="text-[10px] text-ink/65 leading-tight">Talking to the people who'll use it.</p>
+      </div>
+      <div class="bg-cream rounded p-3.5 border-t-2 border-purplelight">
+        <p class="text-[9px] font-bold uppercase tracking-wide text-ink/50 mb-2">Next</p>
+        <p class="text-[12px] text-ink font-semibold mb-1.5 leading-tight">Design &amp; Build</p>
+        <p class="text-[10px] text-ink/65 leading-tight">Prototyping the smallest version that works.</p>
+      </div>
+      <div class="bg-cream rounded p-3.5 border-t-2 border-purplelight">
+        <p class="text-[9px] font-bold uppercase tracking-wide text-ink/50 mb-2">Later</p>
+        <p class="text-[12px] text-ink font-semibold mb-1.5 leading-tight">Support &amp; Iterate</p>
+        <p class="text-[10px] text-ink/65 leading-tight">Training people, then improving from real use.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="border-t border-black/15 pt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <p class="font-serif text-xl text-ink m-0">01. Scale</p>
+        <p class="text-[13px] text-ink/70 mt-1 leading-relaxed">Reporting models supporting <span class="text-purple font-bold">9,000+ students</span> per term.</p>
+      </div>
+      <div>
+        <p class="font-serif text-xl text-ink m-0">02. Snowflake</p>
+        <p class="text-[13px] text-ink/70 mt-1 leading-relaxed">Cortex AI pipelines improving anomaly detection accuracy by <span class="text-purple font-bold">71%</span>.</p>
+      </div>
+      <div>
+        <p class="font-serif text-xl text-ink m-0">03. Support</p>
+        <p class="text-[13px] text-ink/70 mt-1 leading-relaxed">Direct training and technical support across <span class="text-purple font-bold">3 departments</span>.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="px-6 md:px-20 py-28 md:py-36 bg-pink/10 grid grid-cols-1 md:grid-cols-[180px_1fr] gap-6 md:gap-16">
+  <div class="reveal text-purple text-[11px] font-bold uppercase tracking-wider">About</div>
+  <div class="max-w-2xl">
+    <p class="reveal font-serif text-2xl md:text-3xl leading-snug mb-5 text-ink">
+      I work at the intersection of data platforms and applied AI; building the pipelines, integrations, and tools that turn raw data into something people can actually act on.
+    </p>
+  <p class="reveal text-lg leading-relaxed text-ink/80 mb-6">
+  I architect the pipelines and systems that turn fragmented, inconsistent data into something an organization can actually trust and act on, then layer AI on top to surface signal that would otherwise stay buried. But engineering the solution is only half the equation. I've spent just as much time translating that work for the people who depend on it: running demos, training end users, and adapting systems to fit how a team actually operates rather than forcing them to adapt to the system. That same instinct for connecting technical depth to real-world usability extends naturally toward GTM and product-adjacent work too.
+</p>
+    <div class="reveal flex flex-wrap gap-2">
+      <span class="text-sm text-ink bg-blush rounded-full px-4 py-2">Snowflake</span>
+      <span class="text-sm text-ink bg-purplelight rounded-full px-4 py-2">Cortex AI</span>
+      <span class="text-sm text-white bg-purple rounded-full px-4 py-2">SQL</span>
+      <span class="text-sm text-ink bg-blush rounded-full px-4 py-2">Python</span>
+      <span class="text-sm text-ink bg-purplelight rounded-full px-4 py-2">AWS / Azure</span>
+      <span class="text-sm text-ink bg-blush rounded-full px-4 py-2">Power BI</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="px-6 md:px-20 py-28 md:py-36 bg-cream">
+  <div class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Experience</div>
+  <h2 class="reveal font-serif text-3xl md:text-4xl mb-14 max-w-xl text-ink">Where I've built and delivered this work.</h2>
+
+<div class="exp-card reveal bg-white rounded-2xl border border-black/10 p-8 mb-8 cursor-pointer" onclick="this.classList.toggle('open')">
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <span class="text-sm text-purple font-semibold">July 2026 – Present</span>
+      <div class="font-serif text-2xl mt-1 mb-1 text-ink">Data Engineer</div>
+      <div class="text-ink/60 text-[15px]">FastAnalytix LLC — USA</div>
+    </div>
+    <i class="ti ti-chevron-down exp-chevron text-ink/50 text-xl mt-2"></i>
+  </div>
+
+  <div class="exp-detail mt-8 pt-8 border-t border-black/10 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <div>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-1">Problem</p>
+      <p class="text-[14px] leading-relaxed text-ink/85 mb-4">Fiscal invoices and daily email notifications were prepared and sent manually, consuming significant staff time every day.</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-1">Solution</p>
+      <p class="text-[14px] leading-relaxed text-ink/85 mb-5">Orchestrated Snowflake Tasks and stored procedures to automatically process and prepare data payloads, triggering notifications through AWS SNS. Cut manual processing effort by 88%.</p>
+
+      <div class="bg-blush rounded-lg p-4">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/55 mb-2.5">Also part of this role</p>
+        <div class="space-y-2">
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Architected and manage an end-to-end Medallion architecture in Snowflake, designing bronze, silver, and gold layers to ingest and transform large-scale datasets from AWS S3 via Snowpipe for daily automated updates.</p>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Use Kiro AI to accelerate pipeline development and SQL implementation, improving efficiency across data modeling, debugging, and automation.</p>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Own Snowflake as the core data platform, optimizing Virtual Warehouses, schema design, and query performance for reliable, scalable production operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="bg-blush rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/50 mb-3">Seeing it from their side</p>
+        <div class="flex gap-3">
+          <div class="flex-1 bg-cream rounded-md p-3">
+            <p class="text-lg mb-1">😩</p>
+            <p class="text-[11px] font-semibold text-ink mb-0.5">Before</p>
+            <p class="text-[10.5px] text-ink/65 leading-tight">Invoices and emails prepared and sent manually.</p>
+          </div>
+          <div class="flex-1 bg-cream rounded-md p-3 border-2 border-purple">
+            <p class="text-lg mb-1">😌</p>
+            <p class="text-[11px] font-semibold text-ink mb-0.5">After</p>
+            <p class="text-[10.5px] text-ink/65 leading-tight">Fully automated, 88% less manual effort.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-purplelight rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/50 mb-3">What I actually track</p>
+        <div class="space-y-2">
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Manual effort reduced</span>
+            <span class="font-serif text-sm text-purple font-bold">88%</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Medallion layers built</span>
+            <span class="font-serif text-sm text-purple font-bold">3</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Data source</span>
+            <span class="text-[12px] text-ink/70">AWS S3 via Snowpipe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="exp-card reveal bg-white rounded-2xl border border-black/10 p-8 mb-8 cursor-pointer" onclick="this.classList.toggle('open')">
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <span class="text-sm text-purple font-semibold">July 2025 – July 2026</span>
+      <div class="font-serif text-2xl mt-1 mb-1 text-ink">Data Engineer</div>
+      <div class="text-ink/60 text-[15px]">Monterey Peninsula College — California, USA</div>
+    </div>
+    <i class="ti ti-chevron-down exp-chevron text-ink/50 text-xl mt-2"></i>
+  </div>
+
+  <div class="exp-detail mt-8 pt-8 border-t border-black/10 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <div>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-1">Problem</p>
+      <p class="text-[14px] leading-relaxed text-ink/85 mb-4">Approval routing and processing depended on manual steps, which consumed staff time and extended completion time unnecessarily: approvers often took a long time to act, and requestors frequently forgot to check whether their requisition had been approved or rejected.</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-1">Solution</p>
+      <p class="text-[14px] leading-relaxed text-ink/85 mb-5">Engineered database-level workflow automation with SQL triggers and procedural logic, adding hierarchy-based approval routing that automatically notified the next approver in line, plus automatic status notifications so requestors no longer had to manually check approval status. This cut turnaround from 3 to 4 weeks down to under a week.</p>
+
+      <div class="bg-blush rounded-lg p-4">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/55 mb-2.5">Also part of this role</p>
+        <div class="space-y-2">
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Built 35+ SQL reporting and funding calculation models across fiscal, financial aid, and academic operations.</p>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Debugged and optimized ERP (Ellucian Banner) integration pipelines, validating SQL transformations and data reconciliation.</p>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Served as the go-to technical contact for the Fiscal, Financial Aid, and Foundation offices: training staff, troubleshooting reports after patches and process changes, and handling access and account setup requests.</p>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Translated the Financial Aid Office's manual processing rules into custom database logic, so the system fit their workflow instead of the other way around.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="bg-blush rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/50 mb-3">Seeing it from their side</p>
+        <div class="flex gap-3">
+          <div class="flex-1 bg-cream rounded-md p-3">
+            <p class="text-lg mb-1">😩</p>
+            <p class="text-[11px] font-semibold text-ink mb-0.5">Before</p>
+            <p class="text-[10.5px] text-ink/65 leading-tight">Approvals and routing done manually.</p>
+          </div>
+          <div class="flex-1 bg-cream rounded-md p-3 border-2 border-purple">
+            <p class="text-lg mb-1">😌</p>
+            <p class="text-[11px] font-semibold text-ink mb-0.5">After</p>
+            <p class="text-[10.5px] text-ink/65 leading-tight">Approvals now take under a week, with automatic notifications at every step.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-purplelight rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/50 mb-3">What I actually track</p>
+        <div class="space-y-2">
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Reports built</span>
+            <span class="font-serif text-sm text-purple font-bold">35+</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Students supported</span>
+            <span class="font-serif text-sm text-purple font-bold">9,000+</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Staff users</span>
+            <span class="font-serif text-sm text-purple font-bold">500+</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Faster approval turnaround</span>
+            <span class="font-serif text-sm text-purple font-bold">78%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="exp-card reveal bg-white rounded-2xl border border-black/10 p-8 mb-8 cursor-pointer" onclick="this.classList.toggle('open')">
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <span class="text-sm text-purple font-semibold">Jan 2025 – May 2025</span>
+      <div class="font-serif text-2xl mt-1 mb-1 text-ink">Software Engineer Intern</div>
+      <div class="text-ink/60 text-[15px]">Mozilla AI — California, USA</div>
+    </div>
+    <i class="ti ti-chevron-down exp-chevron text-ink/50 text-xl mt-2"></i>
+  </div>
+
+  <div class="exp-detail mt-8 pt-8 border-t border-black/10">
+    <p class="text-[14px] leading-relaxed text-ink/85 mb-6 max-w-2xl">Spearheaded the design of an AI-powered wireframe generator using Python, Ollama (LLaMA 3), LLaVA, Gradio, and Draw.io, converting text and sketches into structured UI wireframes. One project, several distinct problems to solve along the way.</p>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+      <div class="bg-blush rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-purple mb-2">Problem 1</p>
+        <p class="text-[13px] font-semibold text-ink mb-2 leading-snug">Designers work differently</p>
+        <p class="text-[12px] text-ink/70 leading-relaxed">Some wanted to type a description, others preferred sketching by hand. Supported both text-to-image and image-to-image generation, so either path led to a usable wireframe.</p>
+      </div>
+
+      <div class="bg-purplelight rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/55 mb-2">Problem 2</p>
+        <p class="text-[13px] font-semibold text-ink mb-2 leading-snug">One model wasn't enough</p>
+        <p class="text-[12px] text-ink/70 leading-relaxed">LLaMA 3 alone only handled text-to-image. Paired it with LLaVA to cover image-to-image too, fitting existing models to the task rather than training something new.</p>
+      </div>
+
+      <div class="bg-blush rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-purple mb-2">Problem 3</p>
+        <p class="text-[13px] font-semibold text-ink mb-2 leading-snug">Speed was the actual goal</p>
+        <p class="text-[12px] text-ink/70 leading-relaxed">Designers were losing hours to manually building initial wireframes. The tool had to output a structured, usable wireframe directly, not just a rough image, since that speed gain was the whole point.</p>
+      </div>
+
+      <div class="bg-purplelight rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/55 mb-2">Problem 4</p>
+        <p class="text-[13px] font-semibold text-ink mb-2 leading-snug">Designers want the option to refine</p>
+        <p class="text-[12px] text-ink/70 leading-relaxed">Even a strong first draft benefits from a designer's final touch. Integrated Draw.io so the generated wireframe could be opened and edited directly, giving designers that option without leaving the workflow.</p>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="exp-card reveal bg-white rounded-2xl border border-black/10 p-8 mb-8 cursor-pointer" onclick="this.classList.toggle('open')">
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <span class="text-sm text-purple font-semibold">June 2024 – August 2024</span>
+      <div class="font-serif text-2xl mt-1 mb-1 text-ink">Software Engineer Intern</div>
+      <div class="text-ink/60 text-[15px]">FastAnalytix LLC — New Jersey, USA</div>
+    </div>
+    <i class="ti ti-chevron-down exp-chevron text-ink/50 text-xl mt-2"></i>
+  </div>
+
+  <div class="exp-detail mt-8 pt-8 border-t border-black/10 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-1">Problem</p>
+      <p class="text-[14px] leading-relaxed text-ink/85 mb-4">Production Python and SQL Server pipelines had recurring runtime errors and data inconsistencies, undermining the reliability of dashboards that business decision-makers relied on directly.</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-1">Solution</p>
+      <p class="text-[14px] leading-relaxed text-ink/85">Audited the Python and SQL Server processes end to end, independently identifying root causes and implementing preventative validation checks. Built Power BI and Tableau dashboards tracking shareholder metrics across countries, share types, and communication channels.</p>
+    </div>
+    <div>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-purple mb-3">What I actually track</p>
+      <div class="space-y-2">
+        <div class="bg-blush rounded p-3 flex justify-between items-center">
+          <span class="text-[12.5px] text-ink">Runtime error reduction</span>
+          <span class="font-serif text-sm text-purple font-bold">30%</span>
+        </div>
+        <div class="bg-purplelight rounded p-3 flex justify-between items-center">
+          <span class="text-[12.5px] text-ink">Dashboards used by</span>
+          <span class="text-[12px] text-ink/70">Business decision-makers</span>
+        </div>
+        <div class="bg-blush rounded p-3 flex justify-between items-center">
+          <span class="text-[12.5px] text-ink">Tools</span>
+          <span class="text-[12px] text-ink/70">Power BI, Tableau, SQL Server, Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="exp-card reveal bg-white rounded-2xl border border-black/10 p-8 cursor-pointer" onclick="this.classList.toggle('open')">
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <span class="text-sm text-purple font-semibold">Feb 2024 – May 2025</span>
+      <div class="font-serif text-2xl mt-1 mb-1 text-ink">Web and Marketing Intern</div>
+      <div class="text-ink/60 text-[15px]">California State University, Monterey Bay — Seaside, CA</div>
+    </div>
+    <i class="ti ti-chevron-down exp-chevron text-ink/50 text-xl mt-2"></i>
+  </div>
+
+  <div class="exp-detail mt-8 pt-8 border-t border-black/10 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <div>
+      <p class="text-[10px] font-bold uppercase tracking-wider text-purple mb-1">Story 1: Data</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-ink/55 mb-1">Problem</p>
+      <p class="text-[13.5px] leading-relaxed text-ink/85 mb-3">12 years of institutional fee data across CSU campuses existed in unstructured, messy formats, with no consistent way to compare fees across campuses or years.</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-ink/55 mb-1">Solution</p>
+      <p class="text-[13.5px] leading-relaxed text-ink/85 mb-2">Extracted, cleaned, and standardized 12 years of fee data across all 23 CSU campuses, building Tableau dashboards for cross-campus comparison and strategic reporting.</p>
+      <a href="https://public.tableau.com/app/profile/maitreyi.gharat7797/viz/AllCSUCampusesTuition/Sheet1" target="_blank" class="inline-block text-sm text-purple border-b border-transparent hover:border-purple transition-colors mb-6">View Dashboard ↗</a>
+
+      <p class="text-[10px] font-bold uppercase tracking-wider text-purple mb-1">Story 2: Growth</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-ink/55 mb-1">Problem</p>
+      <p class="text-[13.5px] leading-relaxed text-ink/85 mb-3">CSUMB Admissions had little presence on TikTok and a small Instagram following, limiting reach with prospective students.</p>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-ink/55 mb-1">Solution</p>
+      <p class="text-[13.5px] leading-relaxed text-ink/85 mb-2">Planned and ran content strategy and campaigns across both platforms, including on-camera modeling, growing Admissions Instagram from roughly 200 to 2,500 followers and Admissions TikTok from 0 to 220, while also growing the main CSUMB TikTok from hundreds to thousands.</p>
+      <a href="https://www.instagram.com/reel/DGyk3kxyZCv/?stkn=ZTRzemx3Nmltb24=" target="_blank" class="inline-block text-sm text-purple border-b border-transparent hover:border-purple transition-colors mb-5">View Content ↗</a>
+      
+      <div class="bg-blush rounded-lg p-4">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/55 mb-2.5">Also part of this role</p>
+        <div class="space-y-2">
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Managed the CSUMB website using Terminal 4, and optimized query/answer accuracy for the Ocelot chatbot.</p>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="w-1 h-1 rounded-full bg-purple mt-1.5 flex-shrink-0"></span>
+            <p class="text-[12.5px] text-ink/80 leading-relaxed">Shot event and campus photography used across marketing channels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="bg-purplelight rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/50 mb-3">Data, by the numbers</p>
+        <div class="space-y-2">
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Years of fee data analyzed</span>
+            <span class="font-serif text-sm text-purple font-bold">12</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">CSU campuses covered</span>
+            <span class="font-serif text-sm text-purple font-bold">23</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-blush rounded-lg p-5">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-ink/50 mb-3">Growth, by the numbers</p>
+        <div class="space-y-2">
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Admissions Instagram</span>
+            <span class="font-serif text-sm text-purple font-bold">200 → 2,500</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Admissions TikTok</span>
+            <span class="font-serif text-sm text-purple font-bold">0 → 220</span>
+          </div>
+          <div class="bg-cream rounded p-2.5 flex justify-between items-center">
+            <span class="text-[12px] text-ink">Main CSUMB TikTok</span>
+            <span class="text-[12px] text-ink/70">Hundreds → thousands</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section id="projects" class="px-6 md:px-20 py-28 md:py-36 bg-purplelight/25">
+  <div class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Projects</div>
+  <h2 class="reveal font-serif text-3xl md:text-4xl mb-14 max-w-xl text-ink">Things I've built on my own time.</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="reveal bg-cream border border-black/10 rounded-lg p-8 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <p class="text-[10px] tracking-widest font-bold text-purple mb-3">Project Nº 1 · SNOWFLAKE · AI</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">Snowflake</span>
+        <span class="text-xs text-ink bg-purplelight rounded-full px-3 py-1.5">Cortex AI</span>
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">SQL</span>
+      </div>
+      <div class="font-serif text-xl mb-2.5 text-ink">Snowflake Intelligence Data Platform</div>
+      <p class="text-[14.5px] text-ink/70 leading-relaxed">Designed a Snowflake schema data warehouse with optimized ETL/ELT pipelines across 100K+ records, using Dynamic Tables, Tasks, and Streams. Applied Cortex AI-powered SQL functions for anomaly detection, improving query performance by 25% and detection accuracy by 71%.</p>
+    </div>
+
+    <div class="reveal bg-cream border border-black/10 rounded-lg p-8 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <p class="text-[10px] tracking-widest font-bold text-purple mb-3">Project Nº 2 · AI · WELLNESS</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">JavaScript</span>
+        <span class="text-xs text-ink bg-purplelight rounded-full px-3 py-1.5">MediaPipe</span>
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">Claude API</span>
+      </div>
+      <div class="font-serif text-xl mb-2.5 text-ink">Eunoia — AI Face Analysis &amp; Wellness App</div>
+      <p class="text-[14.5px] text-ink/70 leading-relaxed">Built a web app using MediaPipe to capture and process 468 facial landmarks in real time. Integrated Claude API to analyze biomarker data and generate personalized wellness recommendations.</p>
+    </div>
+
+    <div class="reveal bg-cream border border-black/10 rounded-lg p-8 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <p class="text-[10px] tracking-widest font-bold text-purple mb-3">Project Nº 3 · PYTHON · ACCESSIBILITY</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">Python</span>
+        <span class="text-xs text-ink bg-purplelight rounded-full px-3 py-1.5">Automation</span>
+      </div>
+      <div class="font-serif text-xl mb-2.5 text-ink">Audiobook Reader</div>
+      <p class="text-[14.5px] text-ink/70 leading-relaxed">Built a Python audiobook reader processing 100 pages in under 30 seconds using PyPDF2 and pyttsx3, increasing accessibility by 30% with 95% user satisfaction in closed testing.</p>
+    </div>
+
+    <div class="reveal bg-cream border border-black/10 rounded-lg p-8 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <p class="text-[10px] tracking-widest font-bold text-purple mb-3">Project Nº 4 · FULL-STACK</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">Laravel</span>
+        <span class="text-xs text-ink bg-purplelight rounded-full px-3 py-1.5">JavaScript</span>
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">SQL</span>
+      </div>
+      <div class="font-serif text-xl mb-2.5 text-ink">PawsConnect — Full-Stack Application</div>
+      <p class="text-[14.5px] text-ink/70 leading-relaxed">Built a multi-user platform with authentication, backend routing, and structured relational data models using Laravel, JavaScript, and SQL.</p>
+    </div>
+
+    
+       <div class="reveal bg-cream border border-black/10 rounded-lg p-8 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <p class="text-[10px] tracking-widest font-bold text-purple mb-3">Project Nº 5 · ORACLE SQL</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">Oracle SQL</span>
+        <span class="text-xs text-ink bg-purplelight rounded-full px-3 py-1.5">Data Modeling</span>
+      </div>
+      <div class="font-serif text-xl mb-2.5 text-ink">Employee Database System</div>
+      <p class="text-[14.5px] text-ink/70 leading-relaxed">Designed and deployed a structured employee management system using Oracle SQL, applying normalization and indexing strategies to improve query execution speed and data integrity.</p>
+    </div>
+
+    <div class="reveal bg-cream border border-black/10 rounded-lg p-8 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <p class="text-[10px] tracking-widest font-bold text-purple mb-3">Project Nº 6 · TABLEAU · IPEDS DATA</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs text-ink bg-blush rounded-full px-3 py-1.5">Tableau</span>
+        <span class="text-xs text-ink bg-purplelight rounded-full px-3 py-1.5">Institutional Research</span>
+      </div>
+      <div class="font-serif text-xl mb-2.5 text-ink">Stanford vs Harvard: Institutional Benchmarking Dashboard</div>
+      <p class="text-[14.5px] text-ink/70 leading-relaxed mb-4">Peer benchmarking analysis comparing Stanford and Harvard University across enrollment trends, degrees conferred by level, and full-time enrollment patterns using IPEDS data.</p>
+      <a href="https://public.tableau.com/views/Stanford_Academic_Benchmarking/StanfordvsHarvardInstitutionalBenchmarkingDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="inline-block text-sm text-purple border-b border-transparent hover:border-purple transition-colors">View Dashboard ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="px-6 md:px-20 py-28 md:py-36 bg-cream">
+  <div class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Tech Stack</div>
+  <h2 class="reveal font-serif text-3xl md:text-4xl mb-12 max-w-xl text-ink">The tools I use to build, ship, and support data-driven solutions.</h2>
+
+  <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3">
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><img src="https://cdn.simpleicons.org/snowflake" class="w-5 h-5" alt="Snowflake"><span class="text-[10px] text-ink/70">Snowflake</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-python-plain colored text-xl"></i><span class="text-[10px] text-ink/70">Python</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-java-plain colored text-xl"></i><span class="text-[10px] text-ink/70">Java</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-postgresql-plain colored text-xl"></i><span class="text-[10px] text-ink/70">PostgreSQL</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-oracle-original colored text-xl"></i><span class="text-[10px] text-ink/70">Oracle</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-amazonwebservices-plain-wordmark colored text-xl"></i><span class="text-[10px] text-ink/70">AWS</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-azure-plain colored text-xl"></i><span class="text-[10px] text-ink/70">Azure</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-javascript-plain colored text-xl"></i><span class="text-[10px] text-ink/70">JavaScript</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-laravel-plain colored text-xl"></i><span class="text-[10px] text-ink/70">Laravel</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><i class="devicon-git-plain colored text-xl"></i><span class="text-[10px] text-ink/70">Git</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all"><img src="https://cdn.simpleicons.org/jira" class="w-5 h-5" alt="Jira"><span class="text-[10px] text-ink/70">Jira</span></div>
+    <div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all">
+  <div class="w-5 h-5 rounded bg-[#E97627] text-white text-[10px] font-bold flex items-center justify-center">T</div>
+  <span class="text-[10px] text-ink/70">Tableau</span>
+</div>
+<div class="reveal bg-white border border-black/10 rounded-lg py-4 px-2 flex flex-col items-center gap-2 hover:border-purple hover:-translate-y-1 transition-all">
+  <div class="w-5 h-5 rounded bg-[#217346] text-white text-[10px] font-bold flex items-center justify-center">X</div>
+  <span class="text-[10px] text-ink/70">Excel</span>
+</div>
+  </div>
+</section>
+
+<section id="certifications" class="px-6 md:px-20 py-28 md:py-36 bg-pink/10">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <div>
+      <p class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Certifications</p>
+      <div class="reveal mb-5">
+        <div class="font-semibold text-[15px] text-ink">SnowPro Core — COF-C03</div>
+        <div class="text-sm text-ink/60 mt-0.5">Snowflake</div>
+        <a href="https://achieve.snowflake.com/7ecfdb3a-f383-47ca-8b48-c4dbd10cfaae#acc.PsQHGL8c" target="_blank" class="inline-block mt-2 text-sm text-purple border-b border-transparent hover:border-purple transition-colors">View credential ↗</a>
+      </div>
+      <div class="reveal">
+        <div class="font-semibold text-[15px] text-ink">PCEP-30-02 (PCEP™)</div>
+        <div class="text-sm text-ink/60 mt-0.5">Python Institute</div>
+        <a href="https://www.credly.com/badges/f6aaf09a-8af9-482e-a614-2e224fd28571/linked_in_profile" target="_blank" class="inline-block mt-2 text-sm text-purple border-b border-transparent hover:border-purple transition-colors">View credential ↗</a>
+      </div>
+    </div>
+
+    <div>
+      <p class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Leadership</p>
+      <div class="reveal">
+        <div class="font-semibold text-[15px] text-ink">Vice President, Women in Computer Science — CSUMB</div>
+        <div class="text-sm text-ink/60 mt-0.5">Aug 2024 – May 2025 · Founded and named OtterHacks, CSUMB's first large-scale hackathon, leading team coordination, logistics, and sponsorship for 100+ participants.</div>
+      </div>
+    </div>
+
+   <div>
+  <p class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Awards</p>
+
+  <div class="reveal mb-5">
+    <div class="font-semibold text-[15px] text-ink">Magna Cum Laude</div>
+    <div class="text-sm text-ink/60 mt-0.5">California State University, Monterey Bay</div>
+  </div>
+
+  <div class="reveal mb-5">
+    <div class="font-semibold text-[15px] text-ink">Dean's List</div>
+    <div class="text-sm text-ink/60 mt-0.5">December 2023</div>
+  </div>
+
+  <div class="reveal">
+    <div class="font-semibold text-[15px] text-ink">Outstanding Future Alumni Award</div>
+    <div class="text-sm text-ink/60 mt-0.5 mb-3">April 2025, California State University, Monterey Bay</div>
+    <img src="images/outstanding_alum_award.jpg" alt="Outstanding Future Alumni Award" class="w-full max-w-[200px] rounded-lg border border-black/10">
+  </div>
+
+  </div>
+</section>
+
+<section id="beyond" class="px-6 md:px-20 py-28 md:py-36 bg-cream">
+      <p class="reveal text-purple text-[11px] font-bold uppercase tracking-wider mb-4">Beyond the Resume</p>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl">
+  <div class="reveal">
+    <div class="aspect-[4/5] rounded-xl overflow-hidden border border-black/10">
+      <img src="images/CSUMB_myPoster.jpg" alt="Events and Modeling" class="w-full h-full object-cover">
+    </div>
+    <p class="text-center text-[13px] text-ink/70 mt-3">Events, Modeling & More</p>
+  </div>
+  <div class="reveal">
+    <div class="aspect-[4/5] rounded-xl overflow-hidden border border-black/10">
+      <img src="images/32576.JPEG" alt="IEEExtreme Ambassador and Public Speaking" class="w-full h-full object-cover">
+    </div>
+    <p class="text-center text-[13px] text-ink/70 mt-3">IEEExtreme Ambassador & Public Speaking</p>
+  </div>
+  <div class="reveal">
+    <div class="aspect-[4/5] rounded-xl overflow-hidden border border-black/10">
+      <img src="images/IMG_9607.jpg" alt="WiE Conference and Volunteering" class="w-full h-full object-cover">
+    </div>
+    <p class="text-center text-[13px] text-ink/70 mt-3">WiE Conference & Volunteering</p>
+  </div>
+  <div class="reveal">
+    <div class="aspect-[4/5] rounded-xl overflow-hidden border border-black/10">
+      <img src="images/IMG_5474.jpg" alt="CalHacks and Other Hackathons" class="w-full h-full object-cover">
+    </div>
+    <p class="text-center text-[13px] text-ink/70 mt-3">CalHacks & More Hackathons</p>
+  </div>
+</div>
+</section>
+
+<section id="testimonials" class="py-20 bg-ink overflow-hidden">
+  <p class="text-center text-purple text-[11px] font-bold uppercase tracking-wider mb-8">What people say</p>
+  <div class="overflow-hidden w-full">
+    <div class="marquee-track flex gap-5 items-center" style="width:max-content;">
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony1.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony2.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony3.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony4.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony5.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony6.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony7.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony8.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony9.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony1.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony2.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony3.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony4.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony5.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony6.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony7.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony8.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+      <div class="w-[320px] rounded-lg overflow-hidden flex-shrink-0 bg-white p-2.5 border border-black/10"><img src="images/testimony9.png" alt="Testimonial" class="w-full h-auto object-contain"></div>
+    </div>
+  </div>
+</section>
+
+<section id="resume-cta" class="px-6 md:px-20 py-16 md:py-20 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+  <h2 class="reveal font-serif text-2xl md:text-3xl max-w-md text-ink">Want the full picture? Grab a copy of my resume.</h2>
+  <a href="resume.pdf" download class="reveal inline-flex items-center gap-2.5 bg-purple text-white px-7 py-4 rounded-full text-[15px] font-semibold hover:bg-ink transition-colors">
+    Download Resume
+    <i class="ti ti-download text-[16px]"></i>
+  </a>
+</section>
+
+<footer class="bg-cream text-ink/60 text-center text-sm px-6 md:px-20 py-10 border-t border-black/10">
+  Built with care. © <span id="year"></span> Maitreyi Gharat
+</footer>
+
+<script>
+
+    const waveText = "Maitreyi Gharat.";
+    const waveEl = document.getElementById('wave-name');
+    waveText.split('').forEach((char, i) => {
+        const span = document.createElement('span');
+        span.className = 'wave-letter';
+        span.style.animationDelay = (i * 0.04) + 's';
+        span.textContent = char === ' ' ? '\u00A0' : char;
+        waveEl.appendChild(span);
+    });
+
+  const line = "SELECT role FROM career WHERE gets_it_done = true AND delivers_more = true;";
+  const typedEl = document.getElementById('typed-line');
+  let heroAnimated = false;
+
+  function startHeroAnimation(){
+    if (heroAnimated) return;
+    heroAnimated = true;
+
+    let i = 0;
+    function typeChar(){
+      if(i <= line.length){
+        typedEl.textContent = line.slice(0, i);
+        i++;
+        setTimeout(typeChar, 38);
+      }
+    }
+    setTimeout(typeChar, 700);
+  }
+
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ startHeroAnimation(); heroObserver.disconnect(); } });
+  }, {threshold:0.3});
+  heroObserver.observe(document.getElementById('hero'));
+
+  function updateProgress(){
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = Math.min(100, (scrollTop / docHeight) * 100);
+    document.getElementById('progress-fill').style.height = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress);
+  updateProgress();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.2});
+  revealEls.forEach(el => io.observe(el));
+
+
+const photoCard = document.getElementById('photo-card');
+const photoShine = document.getElementById('photo-shine');
+
+if (photoCard && photoShine) {
+  photoCard.addEventListener('mousemove', (e) => {
+    const rect = photoCard.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -18;
+    const rotateY = ((x - centerX) / centerX) * 18;
+
+    photoCard.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    photoShine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.25), transparent 45%)`;
+    photoShine.style.opacity = '1';
+  });
+
+  photoCard.addEventListener('mouseleave', () => {
+    photoCard.style.transform = 'perspective(500px) rotateX(0deg) rotateY(0deg) scale(1)';
+    photoShine.style.opacity = '0';
+  });
+}
+</script>
+
+</body>
+</html>
